@@ -1,0 +1,45 @@
+﻿<Window x:Class="Diploma.Windows.Authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diploma.Windows"
+        mc:Ignorable="d"
+       Background="AliceBlue"
+        Title="Authorization"
+        Height="400"
+        Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        WindowStyle="None">
+    <Grid>
+        
+        <TextBlock Text="Random Company"
+                   FontSize="38"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="27,10,23,0" 
+                   Width="350"
+                   VerticalAlignment="Top" FontFamily="Stencil" Height="64"/>
+        <TextBox   x:Name="TextLogin" 
+                   FontSize="20"
+                   FontWeight="DemiBold" Margin="50,123,54,0"
+                   ToolTip="Enter Login" Height="40"
+                   VerticalAlignment="Top">
+
+        </TextBox>
+
+        <PasswordBox   x:Name="TextPassword" 
+                   FontSize="20"
+                   FontWeight="DemiBold" Margin="50,200,54,0"
+                   ToolTip="Enter Password" Height="40"
+                       BorderThickness="2" BorderBrush="Aquamarine"
+                   VerticalAlignment="Top"/>
+        <Button x:Name="BtnAuthorization" Margin="133,264,132,93"
+                Background="White"
+                Content="Sign In"
+                FontSize="18"
+                BorderThickness="2"
+                FontWeight="Bold" Click="BtnAuthorization_Click"/>
+    </Grid>
+</Window>

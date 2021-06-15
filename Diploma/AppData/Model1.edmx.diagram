@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="101e6b21ce574f6abf28f9ad4e3e17a7" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.Department" Width="1.5" PointX="0.75" PointY="5.125" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.Document" Width="1.5" PointX="5.25" PointY="4.25" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.Gender" Width="1.5" PointX="0.75" PointY="8.625" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.History" Width="1.5" PointX="5.75" PointY="1" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.IfDocumentIsExternal" Width="1.5" PointX="7.5" PointY="5.125" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.Person" Width="1.5" PointX="3" PointY="4" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.Position" Width="1.5" PointX="0.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="1" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.TypeOfDocument" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.TypeOfImportance" Width="1.5" PointX="3" PointY="10.25" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.ViewExternalDocuments" Width="1.5" PointX="7.75" PointY="9" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.ViewInternalDocuments" Width="1.5" PointX="9.75" PointY="1" />
+        <EntityTypeShape EntityType="Diplom_DocumentsModel.ViewPersons" Width="1.5" PointX="9.75" PointY="5" />
+        <AssociationConnector Association="Diplom_DocumentsModel.FK_Document_Department" />
+        <AssociationConnector Association="Diplom_DocumentsModel.FK_Person_Department1" />
+        <AssociationConnector Association="Diplom_DocumentsModel.FK_Document_Person" />
+        <AssociationConnector Association="Diplom_DocumentsModel.FK_Document_Person1" />
+        <AssociationConnector Association="Diplom_DocumentsModel.FK_Document_TypeOfDocument" />
+        <AssociationConnector Association="Diplom_DocumentsModel.FK_Document_TypeOfUrgency" />
+        <AssociationConnector Association="Diplom_DocumentsModel.FK_IfDocumentIsExternal_Document" />
+        <AssociationConnector Association="Diplom_DocumentsModel.FK_Person_Gender" />
+        <AssociationConnector Association="Diplom_DocumentsModel.FK_Person_Position" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

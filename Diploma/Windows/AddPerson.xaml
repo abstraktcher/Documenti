@@ -1,0 +1,82 @@
+﻿<Window x:Class="Diploma.Windows.AddPerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diploma.Windows"
+        mc:Ignorable="d"
+         WindowStartupLocation="CenterScreen"
+        MinHeight="500" MinWidth="900"
+        ResizeMode="NoResize" WindowStyle="None" FontSize="40" Height="1000" Width="700" Background="AliceBlue">
+    <Grid>
+        <TextBlock Text="Имя" VerticalAlignment="Center" HorizontalAlignment="Right"
+                       FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="261" Height="48" Margin="0,40,599,912"/>
+
+        <TextBox Margin="0,40,149,910"  VerticalAlignment="Center" HorizontalAlignment="Right" Name="TxtName"
+                       FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="444" Height="50" RenderTransformOrigin="0.261,-2.35"/>
+        <TextBlock Text="Фамилия" VerticalAlignment="Center" HorizontalAlignment="Right"
+                       FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="261" Height="48" Margin="0,116,599,836"/>
+        <DatePicker x:Name="DPDate" VerticalAlignment="Center" HorizontalAlignment="Right"
+                       FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="444" Height="58" Margin="0,278,149,664" RenderTransformOrigin="0.914,0.02"/>
+        <TextBlock Text="Отчество" VerticalAlignment="Center" HorizontalAlignment="Right"
+                       FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="261" Height="48" Margin="0,202,629,750"/>
+        <Button x:Name="BtnConfirm"
+                        Content="Подтвердить"
+                        FontWeight="Bold" FontSize="25" 
+                        FontFamily="Comic Sans MS" Foreground="Black"
+                        Background="Aquamarine" Margin="31,945,629,10" Click="BtnConfirm_Click"
+                       />
+
+        <Button x:Name="BtnCancel"
+                        Content="Отмена"
+                        FontWeight="Bold" FontSize="25" 
+                        FontFamily="Comic Sans MS" Foreground="Black"
+                        Background="Aquamarine" Click="BtnCancel_Click" Height="45" VerticalAlignment="Top" Margin="336,945,364,0" RenderTransformOrigin="0.714,0.851"
+                       />
+
+        <Button x:Name="BtnDelete"
+                        Content="Удалить"
+                        FontWeight="Bold" FontSize="25" 
+                        FontFamily="Comic Sans MS" Foreground="Black"
+                        Background="Aquamarine" Click="BtnDelete_Click" Height="45" VerticalAlignment="Top" Margin="602,945,98,0" RenderTransformOrigin="0.714,0.851"
+                       />
+        <TextBlock Text="Дата Рождения" VerticalAlignment="Center" HorizontalAlignment="Right"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="261" Height="48" Margin="0,288,604,664"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="314" Height="48" Margin="0,371,551,581" Text="Пол"/>
+        <ComboBox Margin="0,369,201,581"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="CmbGender" IsEditable="True"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="392" Height="50" RenderTransformOrigin="0.261,-2.35"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="314" Height="48" Margin="0,453,576,499" Text="Дата найма"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="314" Height="48" Margin="0,539,551,413" Text="Телефон"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="294" Height="48" Margin="0,620,571,332" Text="Почта"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="294" Height="48" Margin="0,675,566,277" Text="Адрес"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="294" Height="48" Margin="0,728,571,224" Text="Должность"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="294" Height="48" Margin="0,860,566,92" Text="Отдел"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="294" Height="48" Margin="0,789,565,163" Text="Пароль"/>
+        <TextBox Margin="0,114,149,836"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="TxtLName"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="444" Height="50" RenderTransformOrigin="0.261,-2.35"/>
+        <TextBox Margin="0,202,149,748"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="TxtMName"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="444" Height="50" RenderTransformOrigin="0.261,-2.35"/>
+        <DatePicker x:Name="DPHire" VerticalAlignment="Center" HorizontalAlignment="Right"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="444" Height="58" Margin="0,453,149,489" RenderTransformOrigin="0.914,0.02"/>
+        <TextBox Margin="0,537,149,413"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="TxtPhone"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="444" Height="50" RenderTransformOrigin="0.261,-2.35"/>
+        <TextBox Margin="0,620,149,330"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="TxtEmail"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="444" Height="50" RenderTransformOrigin="0.261,-2.35"/>
+        <TextBox Margin="0,678,149,272"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="TxtAddress"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="444" Height="50" RenderTransformOrigin="0.261,-2.35"/>
+        <TextBox Margin="0,789,149,161"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="TxtPassword"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="444" Height="50" RenderTransformOrigin="0.261,-2.35"/>
+        <ComboBox Margin="0,739,201,224"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="CmbPosition" IsEditable="True"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="392" Height="37" RenderTransformOrigin="0.261,-2.35"/>
+        <ComboBox Margin="0,860,201,90"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="CmbDepartment" IsEditable="True"
+            FontWeight="Bold" FontSize="30" FontFamily="Comic Sans MS" Foreground="Black" Width="392" Height="50" RenderTransformOrigin="0.261,-2.35"/>
+    </Grid>
+</Window>

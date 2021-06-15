@@ -1,0 +1,68 @@
+﻿<Window x:Class="Diploma.Windows.Persons"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diploma.Windows"
+        mc:Ignorable="d"
+        Background="AliceBlue"
+        Title="Authorization"
+        Height="600"
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <TextBlock Text="Random Company"
+                   FontSize="47"
+                   Foreground="Black"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="139,10,114,0" 
+                   Width="447"
+                   VerticalAlignment="Top" FontFamily="Stencil" Height="64"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <ListView x:Name="ListViewInternalDocs" Margin="10,0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding IdPerson}" Width="30" Header="Id"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Person}" Header="Person"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Age}" Header="Age"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding PositionName}" Header="Position"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding DepartmentName}" Header="Department"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding DateOfBirth, StringFormat='{}{0:dd-MM-yyyy}'}"  Header="BirthDate"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Gender}" Header="Gender"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding DateOfHiring}" Header="Date of Hiring"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding ImportanceName}" Header="Importance"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Gender}" Header="Gender"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding PhoneNumber}" Header="Phone"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Button x:Name="BtnCancel" Content="Cancel" VerticalAlignment="Top"
+             Background="Black"   Foreground="AliceBlue" FontWeight="Bold" FontSize="25" FontFamily="Comic Sans MS"
+                    RenderTransformOrigin="0.751,0.687" Margin="577,20,10,0" Height="40" Click="BtnCancel_Click"/>
+
+            <Button x:Name="BtnEditInfo" Content="Edit" VerticalAlignment="Top"
+             Background="Black"   Foreground="AliceBlue" FontWeight="Bold" FontSize="25" FontFamily="Comic Sans MS"
+                    RenderTransformOrigin="0.751,0.687" Margin="283,20,293,0" Height="40" Click="BtnEditInfo_Click"/>
+
+            <Button x:Name="BtnAddDocument" Content="Add" VerticalAlignment="Top"
+             Background="Black"   Foreground="AliceBlue" FontWeight="Bold" FontSize="25" FontFamily="Comic Sans MS"
+                    RenderTransformOrigin="0.751,0.687" Margin="21,20,585,0" Height="40" Click="BtnAddDocument_Click"/>
+        </Grid>
+    </Grid>
+
+</Window>
